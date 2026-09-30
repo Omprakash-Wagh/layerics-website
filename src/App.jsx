@@ -4,7 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Lenis from 'lenis'
 import './index.css'
 
-const DOWNLOAD_URL = '#' // TODO: replace with the real download link
+const DOWNLOAD_URL = 'https://github.com/Omprakash-Wagh/layerics-website/releases/latest/download/layerics.apk'
 
 function RotaryWheel({ dotClass = '' }) {
   return (
@@ -207,6 +207,7 @@ function App() {
 }
 
 export default App
+
 
 
 
