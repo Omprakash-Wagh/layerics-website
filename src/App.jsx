@@ -134,7 +134,7 @@ function App() {
           
           <div className="hero-shot-container">
             <div className="sheet-stack"></div>
-            <img src="/Screenshot_2026-09-30-13-06-55-27_0f40faabe8b75103479d723d03b3e00e.jpg" alt="App UI" className="hero-img" />
+            <img src="./Screenshot_2026-09-30-13-06-55-27_0f40faabe8b75103479d723d03b3e00e.jpg" alt="App UI" className="hero-img" />
 
             
           </div>
@@ -202,6 +202,7 @@ function App() {
 }
 
 export default App
+
 
 
 
