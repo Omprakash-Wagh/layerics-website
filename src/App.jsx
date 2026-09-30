@@ -20,8 +20,13 @@ function App() {
   const [modalMode, setModalMode] = useState(null); // 'download' or 'instructions' or null
 
   useEffect(() => {
-    if (window.location.hash === '#privacy') setModalMode('privacy');
-    if (window.location.hash === '#terms') setModalMode('terms');
+    const handleHash = () => {
+      if (window.location.hash === '#privacy') setModalMode('privacy');
+      if (window.location.hash === '#terms') setModalMode('terms');
+    };
+    handleHash();
+    window.addEventListener('hashchange', handleHash);
+    return () => window.removeEventListener('hashchange', handleHash);
   }, []);
 
   useEffect(() => {
@@ -202,6 +207,7 @@ function App() {
 }
 
 export default App
+
 
 
 
